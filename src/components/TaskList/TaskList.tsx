@@ -12,7 +12,7 @@ const TaskList = (props: TaskListProps): JSX.Element => {
 
     useEffect(() => {
         const list = localStorage.getItem('tasks');
-        if (taskList.length === 0 && list !== null) {
+        if (list !== null) {
             setToDoList(JSON.parse(list))
         }
     }, []);
